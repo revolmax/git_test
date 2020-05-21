@@ -1,11 +1,19 @@
-const num = 40
-const float = 40.40
-const pow = 10e5
-console.log(Number.MAX_SAFE_INTEGER + 10)
-console.log(Math.pow(2,53)-1)
-console.log((0.2+0.4).toFixed(1))
-
-function getRand (min,max){
-    return Math.floor(Math.random() * (max-min) + min)
+//const name = 'Oleg'
+//const age = 40
+//function getAge(){
+//    return age
+//}
+//const out = 'Hi, my name is  ' + name + ' i am is ' + age + '  old'
+//const out = `Hi, my name is ${name} and i am ${age <=40 ? 'old':'yang'} years old`
+//console.log(out)
+//const name = 'Oleg'
+function person(s, name, age){
+ if (age < 0){
+     age = 'Not birth'
+ }
+    return `${s[0]}${name}${s[1]}${age}${s[2]}`
 }
-console.log(getRand(5,40))
+const personName = 'Oleg'
+const personAge = '40'
+const out = person `Name: ${personName}, age ${personAge}!`
+console.log(out)
