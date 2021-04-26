@@ -1,0 +1,213 @@
+lesson 8
+// @ts-check
+
+const sequenceSum = (begin, end) => {
+  // BEGIN (write your solution here)
+  if (begin > end) {
+    return NaN;
+  } if (begin === end) {
+    return begin;
+  } return (begin + sequenceSum(begin + 1, end));
+  // END
+};
+
+export default sequenceSum;
+
+lesson 9
+// @ts-check
+
+const smallestDivisor = (num) => {
+  // BEGIN (write your solution here)
+  if (num === 1) {
+    return num;
+  }
+  const divisor = (acc) => {
+    if (acc > num / 2) {
+      return num;
+    } if (num % acc === 0) {
+      return (acc);
+    }
+    return divisor(acc + 1);
+  }
+  return divisor(2);
+  // END
+};
+
+export default smallestDivisor;
+
+  // BEGIN
+  // Visualize Execution: https://goo.gl/Mc68MA
+  const iter = (acc) => {
+    // We use 'num / 2' in the condition below, and not 'num'.
+    // This is a simple optimization: a number cannot be divided
+    // by a number larger than its half.
+    if (acc > num / 2) {
+      return num;
+    }
+    if (num % acc === 0) {
+      return acc;
+    }
+    return iter(acc + 1);
+  };
+ 
+  return iter(2);
+  // END
+
+lesson 10
+// @ts-check
+/* eslint operator-assignment: off */
+
+// BEGIN (write your solution here)
+const smallestDivisor = (n) => {
+  let i = 2;
+  if (n < 1) {
+    return NaN;
+  }
+  if (n === 1) {
+    return n;
+  }
+  while (n % i) {
+    i = i + 1;
+  }
+  return i;
+};
+// END
+
+export default smallestDivisor;
+
+// BEGIN
+const smallestDivisor = (num) => {
+  if (num < 1) {
+    return NaN;
+  }
+  if (num === 1) {
+    return num;
+  }
+ 
+  let divisor = 2;
+ 
+  while (num % divisor !== 0) {
+    divisor = divisor + 1;
+  }
+ 
+  return divisor;
+};
+// END
+
+lesson 11
+// BEGIN
+// Visualize Execution: https://goo.gl/8pNRk2
+const reverse = (str) => {
+  let i = str.length - 1;
+  let result = '';
+ 
+  while (i >= 0) {
+    result += str[i];
+    i -= 1;
+  }
+ 
+  return result;
+};
+// END
+// @ts-check
+
+// BEGIN (write your solution here)
+const reverse = (str) => {
+  let string = '';
+  let i = str.length - 1;
+  while (i >= 0) {
+    string = string + str[i];
+    i = i - 1;
+  };
+  return string;
+};
+// END
+
+export default reverse;
+
+lesson 14
+
+myMath
+
+// BEGIN
+export const getTriangleArea = (h, b) => {
+  const area = (h * b) / 2;
+  return area;
+};
+// END
+
+solution
+// BEGIN
+import { getTriangleArea } from './myMathModule.js';
+ 
+const solution = (n) => getTriangleArea(n, square(n) / 2);
+ 
+export default solution;
+// END
+
+// @ts-check
+
+export const getTrianglePerimeter = (a, b, c) => a + b + c;
+
+// BEGIN (write your solution here)
+const getTriangleArea = (h, b) => {
+  const A = (1 / 2) * h * b;
+  return A;
+};
+export default getTriangleArea;
+// END
+
+
+// @ts-check
+
+import square from './square.js';
+import getTriangleArea from './myMathModule.js';
+
+// BEGIN (write your solution here)
+const getTriangleArea1 = (n) => {
+  const b = square(n) / 2; 
+  const h = n; 
+  const getTriang = getTriangleArea(h, b);
+  return getTriang;
+};
+export default getTriangleArea1;
+// END
+
+
+Lesson 13
+
+// BEGIN
+export default (num) => num % 2 !== 0 && num >= 1001;
+// END
+
+Lesson 14
+
+// BEGIN
+export default (a, b, c, d) => {
+  if (a === c && b === d) {
+    return 2;
+  }
+  if ((a > b && c > d) || (a < b && c < d) || (a === b && c === d)) {
+    return 1;
+  }
+ 
+  return 0;
+};
+// END
+// @ts-check
+
+// BEGIN (write your solution here)
+export default (a, b, c, d) => {
+  if (a === c && b === d) {
+    return 2;
+  } else if ((a > b  && c > d )|| (a === b && c ===d) || (a < b && c < d)) {
+    return 1;
+  } 
+ return 0;
+};
+// END
+
+Lesson 15
+
+
+
