@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // let car = null;
 // alert(typeof car)
 // alert(null == undefined)
@@ -190,3 +191,10 @@ for (i = 1, j = 5; i < 5; i++, j--) {
     console.log(j);
     console.log(sum); // 5; 13; 22; 30
 }
+=======
+const cars = ['oka','bmw','mers']
+const fib = [1,1,2,3,5,8,13]
+const index = cars.indexOf('bmw')
+cars[index] = 'java'
+console.log(cars);
+>>>>>>> a429622f279d08826418e9c623c31b8b0c0743a7
