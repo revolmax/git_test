@@ -439,16 +439,50 @@
 // }
 
 // console.log(result);
-let digit = 0,
-    sum = 0;
-//  srSum = sum / digit;
-do {
-    let num = +prompt('enter num', 0);
-    if (num) {
-        digit++;
-        sum += num
-    }
-} while (digit);
-console.log(digit);
-console.log(sum);
-console.log(sum / digit);
+// let digit = 0,
+//     sum = 0;
+// //  srSum = sum / digit;
+// do {
+//     let num = +prompt('enter num', 0);
+//     if (num) {
+//         digit++;
+//         sum += num
+//     }
+// } while (digit);
+// console.log(digit);
+// console.log(sum);
+// console.log(sum / digit);
+// let numStart = +prompt('start num', 0);
+// let numFinish = +prompt('finish num', 0);
+// let sum = 0;
+// let i = numStart;
+// while (i <= numFinish) {
+//     if (i % 2 !== 0) {
+//         sum += i
+//         console.log(i)
+//     }
+//     i++;
+// }
+// console.log(sum)
+
+// let num = +prompt('enter num *');
+// for (let i = 0; i < num; i++) {
+//     for (let j = 0; j < num - 1; j++) {
+//         document.write(' 1 ');
+//     }
+//     for (let j = num - 2 * i; j <= num; j++) {
+//         document.write('*');
+//     }
+//     document.write('<br>');
+//}
+// var height = +prompt("Введите высоту  равнобедренного треугольника: ", "");
+
+// for (var i = 0; i < height; i++) {
+//     for (var j = 1; j < height - i; j++) {
+//         document.write('  '); // рисуем пробел
+//     }
+//     for (var j = height - 2 * i; j <= height; j++) {
+//         document.write('*'); // рисуем символ
+//     }
+//     document.write("<br>");
+// }
