@@ -486,3 +486,24 @@
 //     }
 //     document.write("<br>");
 // }
+// for (let i = 0; i <= 10; i++) {
+//     console.log('this is number' + ' ' + i)
+// }
+// let drivers = ['oleh', 'serhii'];
+// for (let i = 0; i < drivers.length; i++) {
+//     console.log(drivers[i])
+// }
+// class Hater {
+//     constructor(firstName, secondName) {
+//         this.firstName = firstName;
+//         this.secondName = secondName;
+//         //console.log('hi, i am a constructor' + n)
+//     }
+//     sayName() {
+//         console.log(`${this.firstName} ${this.secondName}`)
+//     }
+// }
+// let hater1 = new Hater('vasya', 'pupkin');
+// hater1.sayName();
+// let hater2 = new Hater('ivan', 'petrov');
+// hater2.sayName();
