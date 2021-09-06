@@ -507,3 +507,26 @@
 // hater1.sayName();
 // let hater2 = new Hater('ivan', 'petrov');
 // hater2.sayName();
+
+// const fac = (n) => {
+//     return n ? n * fac(n - 1) : 1
+// }
+// console.log(fac(3))
+
+// let name = 'oleg';
+// const age = '40';
+// const person = (name) => {
+//     console.log(`helo  ${name}`)
+// }
+// person(name)
+
+// let array = [];
+// const range = (start, end) => {
+//     for (let i = start; i <= end; i++) {
+//         if (i % 2 !== 0) {
+//             array.push(i)
+//         }
+//     }
+//     console.log(array);
+// }
+// range(15, 30)
