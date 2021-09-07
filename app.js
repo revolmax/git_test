@@ -530,3 +530,67 @@
 //     console.log(array);
 // }
 // range(15, 30)
+
+// const average = (a, b) => {
+//     let sum = (a + b) / 2;
+//     console.log(sum)
+// }
+// average(5, 3)
+// const square = (x) => {
+//     let sq = x * x;
+//     console.log(sq)
+// }
+// square(3);
+// const cube = (x) => {
+//     let cb = x * x * x;
+//     console.log(cb)
+// }
+// cube(3);
+// const calculate = () => {
+//     const array = [];
+//     for (let i = 0; i <= 9; i++) {
+//         array[i] = average(square(i), cube(i));
+//         //  console.log(result)
+//         // array.push(result)
+//     }
+//     return array
+// }
+// calculate()
+
+// const obj1 = { name: 'vasya' };
+// let obj2 = { name: 'petya' }
+// obj1.name = 'kolya'
+// obj2.name = 'kolpetrya'
+// console.log(obj1);
+// console.log(obj2)
+// obg1 = { name: 50 };
+// obj2 = { age: 40 }
+// console.log(obj1);
+// console.log(obj2);
+
+// const createUser = (name, city) => {
+//     let user = { name: name, city: city }
+//     console.log(user)
+// }
+// createUser('marcus', 'rome')
+
+// const phonebook = [
+//     { name: 'Marcus', phone: '+380445554433' },
+//     { name: 'Vasya', phone: '+38454545454' },
+// ];
+
+// const findPhoneByName = (name) => {
+//     for (const rec of phonebook) {
+//         if (rec.name === name) console.log(rec.phone);
+//     }
+// };
+// const phonebook1 = {
+//     Marcus: '+380445554433',
+//     phone: '+38454545454'
+// };
+
+// const findPhoneByName1 = (name) => {
+//     console.log(phonebook1[name]);
+// }
+// findPhoneByName1('phone')
+// findPhoneByName('Marcus')
